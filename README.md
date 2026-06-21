@@ -31,7 +31,7 @@ cd csu-global-chatbot
 pip install -r requirements.txt
 
 3. Run the chatbot
-streamlit run app.pyShow more lines
+streamlit run app.py
 
 4. Open in browser
 http://localhost:8501
