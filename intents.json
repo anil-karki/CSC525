@@ -1,0 +1,404 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi","hello","hey","good morning","good afternoon","good evening","howdy","greetings"],
+      "responses": [
+        "Hello! I can answer questions about CSU Global — academic calendar, student success services, admissions, programs, cost, career development, and more.",
+        "Hi there! Ask me anything about CSU Global's student success section, academic calendar, admissions, or programs."
+      ]
+    },
+    {
+      "tag": "smalltalk",
+      "patterns": ["how are you","how are you doing","whats up","how is it going","what is your name","who are you"],
+      "responses": [
+        "I'm doing well! I'm a CSU Global chatbot covering student success, admissions, programs, cost, and academic calendar topics.",
+        "I'm good! Ask me about CSU Global's services, start dates, tracks, tuition, or anything else on their student success site."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": ["help","what can you do","what kind of questions can i ask","what do you answer","supported questions","what do you know","what topics"],
+      "responses": [
+        "I cover everything in the CSU Global student success section:\n• Academic Calendar (tracks, terms, start dates)\n• Student Success Services (counselors, tutoring, writing center)\n• Academic Support\n• Career Development (coaching, resumes, interviews)\n• Offices & Services (registrar, financial aid, IT support)\n• Admissions (undergraduate, graduate, military, transfer, international)\n• Programs (bachelor's, master's, certificates)\n• Cost & Tuition\n• About CSU Global"
+      ]
+    },
+    {
+      "tag": "closed_domain_notice",
+      "patterns": ["are you open domain","can you answer anything","do you know everything","can you answer all questions","are you general purpose"],
+      "responses": [
+        "No. I am a closed-domain chatbot. I only answer questions about CSU Global — its student success services, academic calendar, admissions, programs, cost, and related topics.",
+        "I specialize in CSU Global content only. For unrelated topics, please contact CSU Global directly."
+      ]
+    },
+
+    {
+      "tag": "course_length",
+      "patterns": ["how long are courses","how long is a course","course length","how many weeks","are courses 8 weeks","week course","length of class","how long does a class last","course duration"],
+      "responses": [
+        "CSU Global courses are 8 weeks long. Most students take one course at a time, letting them focus on a single subject while balancing work and life responsibilities.",
+        "Each course at CSU Global is 8 weeks. The accelerated format lets you move through your degree without waiting for a traditional semester."
+      ]
+    },
+    {
+      "tag": "start_dates",
+      "patterns": ["when do classes start","when can i start","start dates","monthly start dates","how often do classes start","when is the next start date","can i start anytime","when does school start","enrollment dates","new student start","classes begin every"],
+      "responses": [
+        "CSU Global offers monthly start dates — classes begin every four weeks, so you don't have to wait for a traditional fall or spring semester to get started.",
+        "With monthly start dates, you can begin almost any month. Classes begin every four weeks throughout the academic year."
+      ]
+    },
+    {
+      "tag": "trimesters",
+      "patterns": ["how many trimesters","what are the trimesters","trimester","trimester schedule","fall winter spring","academic year structure","how is the year structured","what terms are there","academic periods"],
+      "responses": [
+        "CSU Global operates on three 16-week trimesters: Fall, Winter, and Spring. Each trimester contains two 8-week terms (A/B or C/D), giving you multiple entry points throughout the year.",
+        "The academic year has three trimesters — Fall, Winter, and Spring — each 16 weeks long with two 8-week terms inside."
+      ]
+    },
+    {
+      "tag": "terms_abcd",
+      "patterns": ["what are the terms","a term b term","term a term b term c term d","abcd terms","how many terms","what is term a","what is term b","what is term c","what is term d","terms per trimester"],
+      "responses": [
+        "Each trimester has four terms: A, B, C, and D. Burgundy track students take classes in A and C terms; Gold track students take classes in B and D terms. Each term is 8 weeks long.",
+        "Terms A, B, C, and D are the 8-week slots within each trimester. Your Gold or Burgundy track determines which terms you're enrolled in."
+      ]
+    },
+    {
+      "tag": "burgundy_track",
+      "patterns": ["what is the burgundy track","burgundy track","burgundy","what is burgundy","burgundy schedule","when does burgundy start","burgundy term","burgundy courses"],
+      "responses": [
+        "The Burgundy Track means your courses start in A and C terms — the first 8-week slot in each trimester. Your track is set by when you first enrolled at CSU Global. Download the 2025-2026 Burgundy calendar: https://info.csuglobal.edu/2025-2026-burgundy-track",
+        "Burgundy Track students begin classes in A or C terms. Both Gold and Burgundy follow the same 3-trimester structure; the only difference is the starting term within each trimester."
+      ]
+    },
+    {
+      "tag": "gold_track",
+      "patterns": ["what is the gold track","gold track","gold","what is gold track","gold schedule","when does gold start","gold term","gold courses"],
+      "responses": [
+        "The Gold Track means your courses start in B and D terms — the second 8-week slot in each trimester. Download the 2025-2026 Gold calendar: https://info.csuglobal.edu/2025-2026-gold-track",
+        "Gold Track students begin classes in B or D terms. It gives you a predictable schedule with built-in breaks without sitting out a full trimester."
+      ]
+    },
+    {
+      "tag": "tracks_difference",
+      "patterns": ["what is the difference between gold and burgundy","gold vs burgundy","burgundy vs gold","difference between tracks","which track should i choose","what track am i on","how do tracks work","explain the tracks","two tracks"],
+      "responses": [
+        "The only difference between Gold and Burgundy tracks is when your classes start within each trimester. Burgundy students start in A/C terms; Gold students start in B/D terms. Both follow the same 3-trimester, 8-week structure. Your track is assigned based on when you first enrolled.",
+        "Gold and Burgundy are two scheduling tracks — same structure, different start slots. Burgundy: A and C terms. Gold: B and D terms. This gives everyone built-in breaks and a predictable calendar."
+      ]
+    },
+    {
+      "tag": "calendar_download",
+      "patterns": ["download the calendar","where can i get the calendar","pdf calendar","academic calendar pdf","download calendar","get the schedule","where is the calendar","calendar link","download schedule"],
+      "responses": [
+        "Download the academic calendars here:\n• 2025-2026 Burgundy Track: https://info.csuglobal.edu/2025-2026-burgundy-track\n• 2025-2026 Gold Track: https://info.csuglobal.edu/2025-2026-gold-track\n• 2026-2027 Burgundy Track: https://48485304.fs1.hubspotusercontent-na1.net/hubfs/48485304/Files/Academics/Academic%20Catalogs%20and%20Calendars/calendar_2026-2027_burgundy.pdf\n• 2026-2027 Gold Track: https://48485304.fs1.hubspotusercontent-na1.net/hubfs/48485304/Files/Academics/Academic%20Catalogs%20and%20Calendars/calendar_2026_2027_gold.pdf"
+      ]
+    },
+    {
+      "tag": "academic_calendar_2025_2026",
+      "patterns": ["2025 2026 calendar","current year calendar","this year calendar","2025-2026 academic year","calendar for this year"],
+      "responses": [
+        "The 2025-2026 academic calendars:\n• Burgundy Track: https://info.csuglobal.edu/2025-2026-burgundy-track\n• Gold Track: https://info.csuglobal.edu/2025-2026-gold-track"
+      ]
+    },
+    {
+      "tag": "academic_calendar_2026_2027",
+      "patterns": ["2026 2027 calendar","next year calendar","upcoming calendar","2026-2027 academic year","calendar for next year","2027 academic calendar"],
+      "responses": [
+        "The 2026-2027 academic calendars:\n• Burgundy Track: https://48485304.fs1.hubspotusercontent-na1.net/hubfs/48485304/Files/Academics/Academic%20Catalogs%20and%20Calendars/calendar_2026-2027_burgundy.pdf\n• Gold Track: https://48485304.fs1.hubspotusercontent-na1.net/hubfs/48485304/Files/Academics/Academic%20Catalogs%20and%20Calendars/calendar_2026_2027_gold.pdf"
+      ]
+    },
+    {
+      "tag": "one_course_at_a_time",
+      "patterns": ["do i take one course at a time","how many courses at once","can i take multiple courses","one class at a time","how many classes","course load","take two courses"],
+      "responses": [
+        "Most CSU Global students take one 8-week course at a time. This lets you focus on one subject while managing work and personal commitments — building momentum without feeling overwhelmed.",
+        "CSU Global is designed for one course at a time. The focused 8-week format keeps your schedule manageable and your learning effective."
+      ]
+    },
+
+    {
+      "tag": "student_success_counselor",
+      "patterns": ["what is a student success counselor","student success counselor","do i get an advisor","academic advisor","who helps me","who is my counselor","counselor support","student support","success counselor"],
+      "responses": [
+        "Every CSU Global student is matched with a dedicated Student Success Counselor. Your counselor provides personalized support from your first class through graduation, helping with degree planning, goal setting, course registration, policy questions, and connecting you to resources like tutoring, the library, and career services.",
+        "Your Student Success Counselor is your single point of contact at CSU Global. They're available by phone, email, and live chat to help with educational plans, registration, instructor relationships, and accessing campus resources. Contact: 877-900-2655 | student.success@csuglobal.edu"
+      ]
+    },
+    {
+      "tag": "tutoring",
+      "patterns": ["tutoring","is there tutoring","how do i get help","academic help","subject help","tutoring services","online tutoring","get help with coursework"],
+      "responses": [
+        "CSU Global offers tutoring help in over 250 subject areas. When you get stuck on an assignment, help is just a click away through your student success counselor or the academic support portal.",
+        "Tutoring is available to all CSU Global students in 250+ subjects. Visit: https://csuglobal.edu/student-success/academic-support/tutoring"
+      ]
+    },
+    {
+      "tag": "writing_center",
+      "patterns": ["writing center","help with writing","writing help","paper feedback","essay help","writing support","improve my paper","academic writing"],
+      "responses": [
+        "The CSU Global Writing Center lets you submit any academic writing — from a single paragraph to a full paper — and receive detailed feedback from a writing expert. It helps improve your paper and build long-term writing skills.",
+        "Submit your academic writing to the Writing Center for expert feedback. Available to all students through the academic support resources."
+      ]
+    },
+    {
+      "tag": "career_development",
+      "patterns": ["career services","career development","career coaching","job search help","career help","job placement","career support","career center","professional development"],
+      "responses": [
+        "CSU Global's Career Development Services are free for students and alumni. Services include:\n• Career coaching (1-on-1 sessions with an expert)\n• Resume and cover letter help (reviewed by a Certified Resume Writer)\n• LinkedIn profile guidance\n• Interview preparation and mock interviews\n• Job and internship search support\n• Global Connect networking platform\nVisit: https://csuglobal.edu/student-success/career-development"
+      ]
+    },
+    {
+      "tag": "resume_help",
+      "patterns": ["resume help","resume review","resume tips","how to write a resume","cover letter","resume feedback","resume builder","ats resume"],
+      "responses": [
+        "CSU Global's Career Services team can help you build and review your resume. You'll get access to sample resumes, ATS (Applicant Tracking System) tips, and a review by staff trained by a Certified Professional Resume Writer — all free for students and alumni.",
+        "Resume reviews and cover letter help are available free through CSU Global Career Services. The team is trained by a Certified Professional Resume Writer."
+      ]
+    },
+    {
+      "tag": "interview_prep",
+      "patterns": ["interview preparation","mock interview","interview tips","prepare for interview","interview questions","job interview help","interview practice"],
+      "responses": [
+        "CSU Global Career Services offers interview tips, common interview questions, suggested questions to ask employers, and 50-minute mock interviews with an interview expert — all free for students and alumni.",
+        "You can schedule a mock interview with an interview expert through CSU Global's Career Services. They also provide tips, common questions, and strategies to help you succeed."
+      ]
+    },
+    {
+      "tag": "disability_services",
+      "patterns": ["disability services","accessibility services","accommodation","disability support","ada support","disability office","special needs","disability and accessibility"],
+      "responses": [
+        "CSU Global's Disability and Accessibility Services provide individualized assistance for students with unique needs. The office is committed to helping all students achieve their educational goals. Visit: https://disabilityservices.csuglobal.edu/",
+        "CSU Global offers Disability and Accessibility Services designed to support every student. Contact the office at https://disabilityservices.csuglobal.edu/ for accommodations and assistance."
+      ]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": ["technical support","it support","tech help","computer help","technology support","login issues","portal help","it problems","on demand support"],
+      "responses": [
+        "CSU Global offers on-demand IT Support available any time of day so you can complete coursework on your schedule. Call: 877-512-1974",
+        "On-demand tech support is available 24/7 at CSU Global. Phone: 877-512-1974. Your student success counselor can also connect you if needed."
+      ]
+    },
+    {
+      "tag": "library",
+      "patterns": ["library","online library","research help","library access","librarian","research resources","library services"],
+      "responses": [
+        "CSU Global has an extensive online library with a dedicated librarian to help you navigate research and resources. Access it through your student portal or ask your student success counselor to connect you.",
+        "The CSU Global library offers research support with an online librarian available to advise you. Access is through the student portal."
+      ]
+    },
+    {
+      "tag": "registrar",
+      "patterns": ["registrar","student records","transcripts","order transcript","official transcript","enrollment verification","records office"],
+      "responses": [
+        "The CSU Global Office of the Registrar handles student records and transcripts.\n• Phone: 800-462-7845 x5\n• Email: registrar@csuglobal.edu\n• Transcript orders: https://csuglobal.edu/resources/student-services/ordering-transcripts\n• Fax: 720-302-8506"
+      ]
+    },
+    {
+      "tag": "financial_aid",
+      "patterns": ["financial aid","fafsa","scholarships","grants","student loans","financial assistance","aid office","financial aid office","how to pay for school"],
+      "responses": [
+        "CSU Global's Student Financial Services office handles financial aid, billing, and military benefits.\n• Main: 855-212-6700\n• Financial Aid (x3): financialaid@csuglobal.edu\n• Military Benefits (x1): military.benefits@csuglobal.edu\n• Student Accounts/Billing (x2): studentaccounts@csuglobal.edu\nVisit: https://csuglobal.edu/tuition-aid/financial-aid"
+      ]
+    },
+    {
+      "tag": "tuition_cost",
+      "patterns": ["how much does it cost","tuition","cost of attendance","how much is tuition","tuition rate","tuition guarantee","price","fees","no fees","affordable","student fees"],
+      "responses": [
+        "CSU Global offers a tuition guarantee — your rate stays the same from your first class to your last. CSU Global charges $0 in student fees: no out-of-state fees, athletic fees, per-credit fees, or hidden charges. It's ranked among the most affordable online universities by U.S. News & World Report. For current rates visit: https://csuglobal.edu/tuition-aid/tuition-cost",
+        "Once you enroll, CSU Global locks in your tuition rate for your entire program. There are no student fees of any kind — no out-of-state, athletic, or per-credit fees. Visit https://csuglobal.edu/tuition-aid/tuition-cost for current tuition rates."
+      ]
+    },
+
+    {
+      "tag": "admissions_overview",
+      "patterns": ["admissions","how do i apply","apply to csu global","how to enroll","application","get started","how do i start","application fee","application process","admission requirements"],
+      "responses": [
+        "CSU Global has admission requirements by program level:\n• Undergraduate: https://csuglobal.edu/admissions/undergraduate-students/\n• Graduate: https://csuglobal.edu/admissions/graduate-students/\n• Military & Veteran: https://csuglobal.edu/admissions/military-veteran-students/\n• Transfer: https://csuglobal.edu/admissions/transfer-students/\n• International: https://csuglobal.edu/admissions/international-students/\n• Non-Degree: https://csuglobal.edu/admissions/non-degree-students/\n\nApply at: https://myapplication.csuglobal.edu/apply\nThere is a $25 application fee, but fee waivers are sometimes available.",
+        "To apply to CSU Global, visit https://myapplication.csuglobal.edu/apply. Enrollment Counselors are available to help — call (800) 462-7845 or email enroll@csuglobal.edu."
+      ]
+    },
+    {
+      "tag": "admissions_undergraduate",
+      "patterns": ["undergraduate admissions","bachelor degree admission","undergrad requirements","bachelor requirements","how to apply for bachelors","undergraduate application"],
+      "responses": [
+        "CSU Global offers accredited online bachelor's degrees. Undergraduate admissions information is at: https://csuglobal.edu/admissions/undergraduate-students/\n\nApply at: https://myapplication.csuglobal.edu/apply"
+      ]
+    },
+    {
+      "tag": "admissions_graduate",
+      "patterns": ["graduate admissions","masters admission","graduate requirements","how to apply for masters","graduate application","mba admission"],
+      "responses": [
+        "CSU Global offers online graduate programs in many fields. Graduate admissions requirements are at: https://csuglobal.edu/admissions/graduate-students/\n\nApply at: https://myapplication.csuglobal.edu/apply"
+      ]
+    },
+    {
+      "tag": "admissions_military",
+      "patterns": ["military admissions","veteran admissions","military benefits","gi bill","va benefits","military education","active duty student","veteran student","military application"],
+      "responses": [
+        "U.S. Military personnel and their families can apply for free at CSU Global. Military & Veteran admissions: https://csuglobal.edu/admissions/military-veteran-students/\nMilitary Benefits contact: 855-212-6700 x1 | military.benefits@csuglobal.edu"
+      ]
+    },
+    {
+      "tag": "admissions_transfer",
+      "patterns": ["transfer admissions","transfer credits","how many credits transfer","transfer student","credit transfer","community college transfer","transfer application"],
+      "responses": [
+        "CSU Global accepts as much transfer credit as possible to save you time and money. Transfer admissions info: https://csuglobal.edu/admissions/transfer-students/\n\nTransferring from a Colorado Community College? See: https://csuglobal.edu/blog/transferring-from-a-colorado-community-college-to-csu-global-what-you-need-to-know"
+      ]
+    },
+    {
+      "tag": "admissions_international",
+      "patterns": ["international admissions","international student","study from abroad","foreign student","international application","non-us student"],
+      "responses": [
+        "CSU Global welcomes students from around the world to earn a fully accredited degree from an American university. International admissions: https://csuglobal.edu/admissions/international-students/"
+      ]
+    },
+    {
+      "tag": "programs_overview",
+      "patterns": [
+        "what programs are offered","what degrees are available","list of programs",
+        "all programs","available programs","degree options","what can i study",
+        "what majors are available","show me all degrees","full list of programs",
+        "what fields of study","degrees offered","all degree programs"
+      ],
+      "responses": [
+        "CSU Global offers:\n\n📘 Bachelor's Degrees: Accounting, Agile Project Management, Business Management, Computer Science, Criminal Justice, Cybersecurity, Finance, Health Sciences Management, Healthcare Administration, Human Resource Management, Human Services, Information Technology, Interdisciplinary Studies, Legal Studies, Management Information Systems, Marketing, Operations & Supply Chain Management, Organizational Leadership, Project Management.\n\n📗 Master's Degrees: MBA, MBA in Product Management, MBA in Supply Chain & Operations, AI & Machine Learning, Cybersecurity, Data Analytics, Finance, Healthcare Administration, Healthcare Analytics, Human Resource Management, IT Management, Interdisciplinary Studies, International Business, Leadership & Organizational Development, Management, Professional Accounting, Project Management, Teaching & Learning.\n\n📙 Certificates and Industry Certification Prep (CompTIA, AWS, Microsoft Azure, ISACA, ISC2, EC-Council, etc.)\n\nBrowse all: https://csuglobal.edu/academic-programs/"
+      ]
+    },
+    {
+      "tag": "masters_programs",
+      "patterns": [
+        "what master's programs does csu global offer","masters programs","master degrees",
+        "what masters degrees are available","masters degree options","graduate programs",
+        "what graduate degrees are offered","list of master programs","masters degree list",
+        "what can i get a masters in","masters degree csu global",
+        "mba","mba program","business administration","master of business administration",
+        "ai and machine learning master","artificial intelligence master","machine learning degree",
+        "cybersecurity master","cybersecurity graduate program","master in cybersecurity",
+        "data analytics master","master of data analytics","data science master",
+        "healthcare administration master","healthcare analytics master",
+        "human resource management master","hr master degree",
+        "information technology management master","it management graduate",
+        "project management master","project management graduate",
+        "teaching and learning master","education master","master in education",
+        "international business master","leadership master","organizational leadership master",
+        "finance master","accounting master","professional accounting",
+        "supply chain master","operations management master","product management mba"
+      ],
+      "responses": [
+        "CSU Global Master's Degrees:\n\n• MBA (Business Administration)\n• MBA in Product Management\n• MBA in Supply Chain & Operations Management\n• Artificial Intelligence & Machine Learning\n• Cybersecurity\n• Data Analytics\n• Finance\n• Healthcare Administration\n• Healthcare Analytics\n• Human Resource Management\n• Information Technology Management\n• Interdisciplinary Professional Studies\n• International Business Studies\n• Leadership & Organizational Development\n• Management\n• Professional Accounting\n• Project Management\n• Teaching & Learning\n\nMore info: https://csuglobal.edu/academic-programs/"
+      ]
+    },
+    {
+      "tag": "bachelors_programs",
+      "patterns": [
+        "what bachelor's degrees does csu global offer","bachelors programs","bachelor degrees",
+        "what bachelor degrees are available","undergrad degree options","undergraduate programs",
+        "list of bachelor programs","bachelor degree list","what can i get a bachelors in",
+        "bachelors degree csu global","undergraduate degrees offered","bachelor degree programs",
+        "accounting degree","accounting bachelor","business management degree",
+        "computer science degree","computer science bachelor","cs degree",
+        "criminal justice degree","criminal justice bachelor",
+        "cybersecurity bachelor","cybersecurity undergraduate",
+        "finance bachelor","finance degree",
+        "healthcare administration bachelor","health sciences management",
+        "human resource management bachelor","hr bachelor",
+        "human services degree","information technology bachelor","it degree",
+        "marketing degree","marketing bachelor",
+        "organizational leadership degree","project management bachelor",
+        "legal studies degree","operations supply chain degree"
+      ],
+      "responses": [
+        "CSU Global Bachelor's Degrees:\n\n• Accounting\n• Agile Project Management\n• Business Management\n• Computer Science\n• Criminal Justice\n• Cybersecurity\n• Finance\n• Health Sciences Management\n• Healthcare Administration & Management\n• Human Resource Management\n• Human Services\n• Information Technology\n• Interdisciplinary Professional Studies\n• Legal Studies\n• Management Information Systems & Business Analytics\n• Marketing\n• Operations & Supply Chain Management\n• Organizational Leadership\n• Project Management\n\nMore info: https://csuglobal.edu/academic-programs/undergraduate-degrees"
+      ]
+    },
+    {
+      "tag": "certifications",
+      "patterns": [
+        "industry certifications","certification prep","comptia","aws certification",
+        "microsoft certification","azure","cybersecurity certification","isaca","isc2",
+        "ec council","ceh","ethical hacker","security plus","network plus","cism",
+        "cissp","cisa","cloud certification","it certification","certificate programs"
+      ],
+      "responses": [
+        "CSU Global offers Industry Certification & License Prep programs to prepare you for exams in:\n\n• CompTIA (A+, Network+, Security+, Linux+, Cloud+)\n• Microsoft (AZ-104, AZ-800)\n• AWS Cloud Practitioner\n• ISC2 (SSCP, CCSP)\n• ISACA (CISM, CISA)\n• EC-Council (CEH — Certified Ethical Hacker)\n• Project+\n• Emergency Management certifications\n\nMore info: https://csuglobal.edu/industry-certifications"
+      ]
+    },
+    {
+      "tag": "about_csu_global",
+      "patterns": ["what is csu global","about csu global","tell me about csu global","csu global overview","who runs csu global","csu global history","csu system","colorado state university global"],
+      "responses": [
+        "CSU Global is the first independent, fully-accredited, 100% online state university established in the United States. It is part of the Colorado State University System — alongside CSU Fort Collins and CSU-Pueblo — governed by the same CSU System Board of Governors. Together the three schools serve 52,000 scholars annually with 200,000+ alumni worldwide.",
+        "CSU Global is a fully accredited, 100% online public university in the Colorado State University System. Your diploma is conferred by the CSU System Board of Governors and features the CSU Global seal. The university is ranked among the best by U.S. News & World Report. Learn more: https://csuglobal.edu/about"
+      ]
+    },
+    {
+      "tag": "accreditation",
+      "patterns": ["is csu global accredited","accreditation","regional accreditation","hlc accreditation","accredited university","is the degree valid","is the degree recognized","csu global accredited","is it accredited","accredited online university","fully accredited"],
+      "responses": [
+        "CSU Global is fully accredited and part of the Colorado State University System. Your degree is conferred by the CSU System Board of Governors and recognized by employers nationwide. Accreditation details: https://csuglobal.edu/about/accreditation"
+      ]
+    },
+    {
+      "tag": "online_learning",
+      "patterns": ["how does online learning work","is it fully online","100 percent online","online classes","no campus","distance learning","how is it online","learn from home","remote learning"],
+      "responses": [
+        "CSU Global is 100% online with no fixed schedules. Classes are fully online — as long as you have a WiFi connection, you can learn from anywhere. Programs are built for online excellence from day one, not adapted from a traditional campus.",
+        "All CSU Global courses are 100% online with flexible weekly deadlines. You never need to be on a physical campus. Programs use multimedia lectures, ebooks, real-world simulations, and more."
+      ]
+    },
+    {
+      "tag": "faculty",
+      "patterns": ["who are the professors","faculty","instructors","who teaches the courses","qualified teachers","professor credentials","faculty experience"],
+      "responses": [
+        "CSU Global faculty hold terminal degrees and have real professional experience in their fields. They are specially trained to teach in a dynamic online environment — not just subject matter experts, but skilled online educators.",
+        "Instructors at CSU Global have both terminal degrees and industry experience. They're specifically trained for online teaching, and the curriculum is reviewed and updated annually to match current employer demands."
+      ]
+    },
+    {
+      "tag": "offices_contact",
+      "patterns": ["contact csu global","phone number","email csu global","how do i reach csu global","offices","departments","who do i call","main number","contact information"],
+      "responses": [
+        "CSU Global key contacts:\n• Enrollment: (800) 920-6723 | enroll@csuglobal.edu\n• Student Success Counselors: 877-900-2655 | student.success@csuglobal.edu\n• IT Support: 877-512-1974\n• Registrar: 800-462-7845 x5 | registrar@csuglobal.edu\n• Financial Aid: 855-212-6700 x3 | financialaid@csuglobal.edu\n• Military Benefits: 855-212-6700 x1 | military.benefits@csuglobal.edu\n• Address: 555 17th St., Ste. 1000, Denver, CO 80202\n• Website: https://csuglobal.edu"
+      ]
+    },
+    {
+      "tag": "course_catalog",
+      "patterns": ["course catalog","what courses are available","list of courses","available programs","spring 2026 courses","course offerings","class list"],
+      "responses": [
+        "Browse the CSU Global course catalog at: https://csuglobal.edu/student-success/course-catalog\nCourses are organized by academic term and program."
+      ]
+    },
+    {
+      "tag": "student_organizations",
+      "patterns": ["student organizations","student clubs","student groups","extracurricular","student life","student community","join a club"],
+      "responses": [
+        "CSU Global has student organizations to connect students and build community. Learn more at: https://csuglobal.edu/student-success/student-organizations"
+      ]
+    },
+    {
+      "tag": "global_connect",
+      "patterns": ["global connect","networking","alumni network","student network","mentor","connect with students","alumni connection"],
+      "responses": [
+        "CSU Global Connect is the university's networking platform where students and alumni can network, find mentors, and build professional connections. It's available through Career Development Services."
+      ]
+    },
+    {
+      "tag": "student_policies",
+      "patterns": ["student policies","academic policies","code of conduct","student rules","academic integrity","policy questions","university policies"],
+      "responses": [
+        "CSU Global student policies cover academic integrity, course conduct, and university procedures. Your Student Success Counselor can clarify any policy questions. Full policies: https://csuglobal.edu/student-policies"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": ["tell me a joke","weather today","who is the president","random question","what is the meaning of life","sports score"],
+      "responses": [
+        "Sorry, that's outside my scope. I only answer questions about CSU Global — try asking about admissions, tuition, programs, student services, or the academic calendar.",
+        "I specialize in CSU Global content only. Ask me about start dates, tracks, tutoring, career services, admissions, or programs."
+      ]
+    }
+  ]
+}

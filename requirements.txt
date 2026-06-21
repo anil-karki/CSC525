@@ -1,0 +1,20 @@
+# CSU Global Chatbot — required packages
+# Install with: pip install -r requirements.txt
+
+# Streamlit web UI
+streamlit==1.58.0
+
+# HTTP requests for web scraping
+requests==2.34.2
+
+# HTML parsing
+beautifulsoup4==4.15.0
+lxml                        # optional but faster HTML parser for BeautifulSoup
+
+# NLP / similarity matching
+scikit-learn==1.9.0
+
+# JavaScript-rendered page scraping (optional fallback)
+# Installs Chromium headlessly to render JS-heavy pages
+# Only needed if the plain requests scrape returns empty content
+requests-html
