@@ -24,16 +24,21 @@ This is a closed-domain NLP chatbot designed to answer questions related to Colo
 ## How to Run
 
 1. Clone the repository
+
 git clone https://github.com/YOUR_USERNAME/CSC525
+
 cd csu-global-chatbot
 
 2. Install dependencies
+
 pip install -r requirements.txt
 
 3. Run the chatbot
+
 streamlit run app.py
 
 4. Open in browser
+
 http://localhost:8501
 
 # Notes
