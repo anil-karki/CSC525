@@ -10,7 +10,7 @@
     },
     {
       "tag": "smalltalk",
-      "patterns": ["how are you","how are you doing","whats up","how is it going","what is your name","who are you"],
+      "patterns": ["how are you","how are you doing","whats up","how is it going","what is your name","who are you","are you a bot","are you an ai","what are you","doing well","how do you do","hows it going","tell me about yourself"],
       "responses": [
         "I'm doing well! I'm a CSU Global chatbot covering student success, admissions, programs, cost, and academic calendar topics.",
         "I'm good! Ask me about CSU Global's services, start dates, tracks, tuition, or anything else on their student success site."
@@ -18,7 +18,7 @@
     },
     {
       "tag": "help",
-      "patterns": ["help","what can you do","what kind of questions can i ask","what do you answer","supported questions","what do you know","what topics"],
+      "patterns": ["help","what can you do","what can you help with","what do you do","what kind of questions can i ask","what do you answer","supported questions","what do you know","what topics","show me what you can do","capabilities","features","tell me your features","list your capabilities","chatbot features"],
       "responses": [
         "I cover everything in the CSU Global student success section:\n• Academic Calendar (tracks, terms, start dates)\n• Student Success Services (counselors, tutoring, writing center)\n• Academic Support\n• Career Development (coaching, resumes, interviews)\n• Offices & Services (registrar, financial aid, IT support)\n• Admissions (undergraduate, graduate, military, transfer, international)\n• Programs (bachelor's, master's, certificates)\n• Cost & Tuition\n• About CSU Global"
       ]
@@ -58,7 +58,7 @@
     },
     {
       "tag": "terms_abcd",
-      "patterns": ["what are the terms","a term b term","term a term b term c term d","abcd terms","how many terms","what is term a","what is term b","what is term c","what is term d","terms per trimester"],
+      "patterns": ["what are the terms","a term b term","term a term b term c term d","abcd terms","how many terms","what is term a","what is term b","what is term c","what is term d","terms per trimester","what are the a b c d terms","a b c d terms","abcd","what does abcd mean","explain the terms","term structure","course terms explained","explain course terms","explain abcd terms"],
       "responses": [
         "Each trimester has four terms: A, B, C, and D. Burgundy track students take classes in A and C terms; Gold track students take classes in B and D terms. Each term is 8 weeks long.",
         "Terms A, B, C, and D are the 8-week slots within each trimester. Your Gold or Burgundy track determines which terms you're enrolled in."
@@ -205,7 +205,7 @@
     },
     {
       "tag": "tuition_cost",
-      "patterns": ["how much does it cost","tuition","cost of attendance","how much is tuition","tuition rate","tuition guarantee","price","fees","no fees","affordable","student fees"],
+      "patterns": ["how much does it cost","how much does csu global cost","tuition","cost of attendance","how much is tuition","tuition rate","tuition guarantee","price","fees","no fees","affordable","student fees","what is the cost","cost per credit","how much per course"],
       "responses": [
         "CSU Global offers a tuition guarantee — your rate stays the same from your first class to your last. CSU Global charges $0 in student fees: no out-of-state fees, athletic fees, per-credit fees, or hidden charges. It's ranked among the most affordable online universities by U.S. News & World Report. For current rates visit: https://csuglobal.edu/tuition-aid/tuition-cost",
         "Once you enroll, CSU Global locks in your tuition rate for your entire program. There are no student fees of any kind — no out-of-state, athletic, or per-credit fees. Visit https://csuglobal.edu/tuition-aid/tuition-cost for current tuition rates."

@@ -193,10 +193,19 @@ def best_match(query, items, vec, mat):
     return items[idx], float(scores[idx])
 
 def get_response(user_input: str) -> str:
-    if not preprocess(user_input):
+    cleaned = preprocess(user_input)
+    if not cleaned:
         return "Please type a question about CSU Global."
 
-    # 1 — structured intents (always checked first)
+    # 0 — exact match for short phrases that TF-IDF stop-word removal may
+    #     zero out (e.g. "how are you", "what can you do")
+    lower_input = user_input.lower().strip().rstrip("?!.,")
+    for intent in intents_data["intents"]:
+        for pattern in intent["patterns"]:
+            if lower_input == pattern.lower().rstrip("?!.,"):
+                return random.choice(intent["responses"])
+
+    # 1 — structured intents via TF-IDF (always checked first)
     best_intent, intent_score = best_match(
         user_input, intent_items, intent_vec, intent_mat
     )
